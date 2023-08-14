@@ -1,10 +1,10 @@
 package com.antoalex07.jmfoods.model;
 
+
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.GeneratedValue;
 import lombok.AllArgsConstructor;
@@ -19,7 +19,6 @@ public class Product {
     
     @Id
     @GeneratedValue
-    @JsonIgnore
     private ObjectId id;
     
     private String productName;
